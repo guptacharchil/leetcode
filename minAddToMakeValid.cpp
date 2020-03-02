@@ -10,7 +10,7 @@ using namespace std;
         	{
         		if(a.size()>0)
         		if(a.top()=='('){
-        			cout<<"a";
+        		//	cout<<"a";
         		a.pop();
         		continue;
         	}

@@ -28,7 +28,7 @@ std::vector<string> commonChars(vector<string>& v) {
     {
 
     	x=common(v[i],x);
-    	cout<<x<<endl;
+    	//cout<<x<<endl;
     } 
     for(int i=0;i<x.length();i++)
     {

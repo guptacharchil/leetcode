@@ -7,7 +7,7 @@ int repeatedStringMatch(string A, string B)
 	int k=m/n;
 	int x=B.find(A);
 	int c=0;
-	cout<<x;
+//	cout<<x;
 	string t;
 	for(int i=0;i<k+2;i++)
 	{
@@ -15,7 +15,7 @@ int repeatedStringMatch(string A, string B)
 		int j=t.find(B);
 		c++;
 		if(j!=-1){
-			cout<<t;
+//			cout<<t;
 			return c;
 		}
 

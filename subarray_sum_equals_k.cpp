@@ -5,7 +5,7 @@ using namespace std;
             int n=v.size();
         int c=0;
         int a[n][n]={0};
-        cout<<a[2][2];
+      //  cout<<a[2][2];
         for(int i=0;i<n;i++)
         {
             int sum=0;

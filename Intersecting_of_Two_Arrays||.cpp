@@ -20,8 +20,8 @@ set <int> s;
  	 set <int, greater <int> > :: iterator itr; 
  for(itr=s.begin();itr!=s.end();itr++)
  	{
-
-cout<<*itr<<" - ";
+ z.push_back(*itr);
+//cout<<*itr<<" - ";
  	}
  }
  return z;        
