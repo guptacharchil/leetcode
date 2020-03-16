@@ -1,33 +1,33 @@
-    #include<bits/stdc++.h>
-    using namespace std;
-    vector<int> dailyTemperatures(vector<int>& t) {
-        vector<int> v(t.size(),0);
-        int n=t.size();
-        for(int i=0;i<n;i++)
-        {
-            for(int j=i+1;j<n;j++)
-            {
-                if(t[i]<t[j])
-                {v[i]=j-i;
-                break;
-                        }            }
-        }
-        return v;
-    }
-    int main()
-    {
-        int cas;
-        cin>>cas;
-        vector<int> v;
-        while(cas--)
-        {
-            int k;
-            cin>>k;
-            v.push_back(k);
-        }
-        v=dailyTemperatures(v);
-        for(int i=0;i<v.size();i++)
-        {
-            cout<<v[i]<<"   ";
-        }
-    }
+#include<iostream>
+#include<stack>
+#include<vector>
+using namespace std;
+
+vector<int> dailyTemperatures(vector<int>& v)
+{
+
+stack<int> s;
+
+int n=v.size();
+std::vector<int> ans(n,0);
+s.push(0);
+for(int i=1;i<n;i++)
+{
+while(!s.size()==0&&v[s.top()]<v[i])
+{
+//  ans.push_back(v[i]-v[s.top()]);
+ans[s.top()]=v[i]-v[s.top()];
+  s.pop();
+//  cout<<"charchil";
+}
+s.push(i);
+}
+return ans;
+}
+int main()
+{
+  std::vector<int> v={73,74,75,71,69,72,76,73};
+  std::vector<int> v1=dailyTemperatures(v);
+  for(int i:v1)
+  cout<<i<<" ";
+}
