@@ -58,43 +58,7 @@ return false;
 	}
     bool exist(vector<vector<char>>& v, string w) {
         vector<vector<int>> v1;
-        for(int i=0;i<v.size();i++){
-        	std::vector<int> v0;
-        	for(int j=0;j<v[0].size();j++)
-        		{
-        			v0.push_back(0);
-
-        		}
-        		v1.push_back(v0);
-        	}
-        	//cout<<"Start2";
-        	bool t=false;
-        	for(int i=0;i<v.size();i++)
-        	{
-        		for(int j=0;j<v[0].size();j++)
-        		{
-        			if(v[i][j]==w[0]){
-        for(int r=0;r<v.size();r++){
-        	std::vector<int> v0;
-        	for(int t=0;t<v[0].size();t++)
-        		{
-        			v0.push_back(0);
-
-        		}
-        		v1.push_back(v0);
-        	}
-
-
-
-        				cout<<"-";
-        				 t=check(v,w,i,j,1,v1);	
-        				if(t)
-        					return t;
-        		
-        		}}}
-        	
-        
-    return false;
+       if()
     }
 int main()
 {

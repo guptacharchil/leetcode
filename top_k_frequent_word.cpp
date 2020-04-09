@@ -32,12 +32,14 @@ using namespace std;
 				}
 			}
 			int l=0;
+			std::vector<string> v1;
 			while(k--)
 			{
-				cout<<ans[l]<<" ";
+				v1.push_back(ans[l]);
+				//cout<<ans[l]<<" ";
 			l++;
 			}
-			return ans;
+			return v1;
 	  }
     int main()
     {
