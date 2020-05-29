@@ -1,22 +1,17 @@
-#include <stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
-    int n1, n2, minMultiple;
-    //printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
+  vector<int> a={1,2,1,4,1,4};
+  int sum=0;
+  for(int i:a)
+  sum+=i;
+  int c=a[0];
+  for(int i=1;i<a.size();i++)
+  {
 
-    // maximum number between n1 and n2 is stored in minMultiple
-    minMultiple = (n1>n2) ? n1 : n2;
-
-    // Always true
-    while(1)
-    {
-        if( minMultiple%n1==0 && minMultiple%n2==0 )
-        {
-            printf("%d",minMultiple);
-            break;
-        }
-        ++minMultiple;
-    }
-    return 0;
+    sum=sum-2*a[i-1];
+    if(sum-a[i]==0)
+    cout<<i+1<<endl;
+  }
 }

@@ -45,6 +45,11 @@ void gameOfLife(vector<vector<int>>& board) {
           }
           cout<<"\n";
         }
+        for(int i=0;i<n;i++)
+        {
+          for(int j=0;j<m;j++)
+          board[i][j]=ans[i][j];
+        }
 
     }
 int main()

@@ -2,7 +2,7 @@
 using namespace std;
 bool palindrome(string x,int s,int l)
 {
-  cout<<x<<"   "<<x[s]<<"   "<<x[l]<<"\n";
+//  cout<<x<<"   "<<x[s]<<"   "<<x[l]<<"\n";
   if(s==l)
   return true;
   if(x[s]!=x[l])

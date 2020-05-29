@@ -4,23 +4,14 @@ vector<int> findAnagrams(string s, string p) {
   int a[26]={0};
   //int b[26]={0};
 std::vector<int> v;
-  int c=0;
+  long int c=0;
+  long int cc=0;
   for(int i=0;i<p.length();i++)
   {
   //  a[(int)p[i]-'a']++;
-    c+=(int)p[i]*(int)p[i];
+    c+=(int)p[i]*(int)p[i]*(int)p[i];
   }
-  for(int i=0;i<s.length();i++)
-  {int cc=0;
-    for(int j=i;j<i+p.length();j++)
-    {
-      cc+=(int)s[j]*(int)s[j];
-    }
-    if(cc==c)
-    {
-    v.push_back(i);
-    }
-  }
+  for(int i=0;i)
 
 return v;
 
